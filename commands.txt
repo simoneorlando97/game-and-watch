@@ -1,0 +1,7 @@
+######################################################################################
+openocd -f interface/stlink.cfg -c "transport select hla_swd" -f target/stm32h7x.cfg
+telnet localhost 4444
+dump_image ./ram.bin 0x24000000 0x40000
+######################################################################################
+flashrom --programmer ch341a_spi -r gameandwatch.bin
+flashrom --programmer ch341a_spi -w modified_flash.bin
