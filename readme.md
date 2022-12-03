@@ -29,7 +29,7 @@ First of all we have to open the device and figure out all components on the mot
 Now that we have located the flash memory we can dump its content via a Flash Chip
 USB Programmer by attaching the Test Clip to the memory on the device and the USB to our laptop.
 
-<img src="./imgs/programmer.jpg" alt="drawing" width="500"/> <img src="./imgs/programmer-in.jpg" alt="drawing" width="500"/>
+<img src="./imgs/programmer.jpg" alt="drawing" width="400"/> <img src="./imgs/programmer-in.jpg" alt="drawing" width="400"/>
 
 Then, we run in our terminal the following command:
 ```bash
@@ -53,7 +53,7 @@ must decrypt the contents of its flash memory and transfer the plain instruction
 so that the CPU can execute them. We can access the contents of the RAM while the device is turned 
 on via the JTAG port on the motherboard. 
 
-<img src="./imgs/st.jpg" alt="drawing" width="500"/><img src="./imgs/st-in.jpg" alt="drawing" width="500"/>
+<img src="./imgs/st.jpg" alt="drawing" width="400"/><img src="./imgs/st-in.jpg" alt="drawing" width="400"/>
 
 We connect the ST-LINK device to the exposed pins and then we run a debugger through the following command:
 ```bash
